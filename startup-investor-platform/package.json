@@ -1,0 +1,10 @@
+{
+  "name": "startup-investor-platform",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../ml-service && pip install -r requirements.txt",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:ml": "cd ml-service && uvicorn main:app --reload --port 8000"
+  }
+}
